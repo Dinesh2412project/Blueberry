@@ -9,7 +9,7 @@
 
 .nav-container{
     width: 100%;
-    height: 200px;
+    height: 150px;
 }
 .navbar-top{
     width: 100%;
@@ -38,7 +38,7 @@
     border-radius: 5px 0px 0px 5px;
 }
 .navbar-input input{
-    padding: 17px 140px 14px 10px;
+    padding: 13px 140px 12px 10px;
     border-radius: 0px 5px 5px 0px;
     border:1px solid rgb(190, 188, 188);
 }
@@ -47,8 +47,15 @@
     display: flex;
     gap: 20px;
 }
+.nav-icon{
+    display: none;
+    margin-left:10rem;
+    margin-top: 10px;
+    font-size: 30px;
+}
 .navbar-1{
     font-size:30px;
+    cursor: pointer;
     color: rgb(116, 116, 241);
 
 }
@@ -82,3 +89,114 @@ list-style-type: none;
 .nav-link:hover{
     color: rgb(58, 58, 241);
 }
+
+                          /*MEDIA QUERY METHOD.....*/
+@media screen and (max-width:428px) {
+    .nav-container{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.navbar-top{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:start;
+    border-bottom: 1px solid rgb(236, 234, 234);
+}
+.navbar-heading{
+  cursor: pointer;
+  display: flex;
+  margin-left:2px;
+}
+.nav-icon{
+    margin-left:12rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 30px;
+    padding: 3px 10px ;
+    color: white;
+    background-color: rgb(85, 83, 83);
+}
+.navbar-input{
+    margin-left: 5px;
+    width: 97%;
+}
+.navbar-input button{
+    padding: 12px 20px;
+    display: none;
+    text-transform:capitalize;
+    font-size: 17px;
+    background-color: white;
+    color: rgb(165, 162, 162);
+    border:1px solid rgb(190, 188, 188);
+    border-right: none;
+    cursor: pointer;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.navbar-input input{
+    padding: 17px 140px 14px 10px;
+    border-radius: 5px;
+    margin-left:10px;
+    margin-top: 10px;
+    border:1px solid rgb(190, 188, 188);
+}
+.navbar-icons{
+    margin-left: 7rem;
+    display: flex;
+    gap: 40px;
+    margin-top: 10px;
+}
+.navbar-1{
+    font-size:30px;
+    color: rgb(116, 116, 241);
+
+}
+.navbar-1 span{
+    font-size: 16px;
+    color: black;
+    display: none;
+    text-transform: capitalize;
+    margin-left: 5px;
+}  
+/*SECOND NAVBAR METHODS......*/
+.navbar-last{
+    border-bottom: none;
+    height: 40px;
+    width: 90%;
+
+}
+.nav-links{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    top:3.5rem;
+    width: 97%;
+    height: 400px;
+    border-radius: 10px;
+    background-color:#0a3d62;
+    align-items: center;
+    gap: 10px;
+    z-index: 1;
+    left: -650px;
+    margin-left:5px;
+    margin-top: 10px;
+list-style-type: none;
+}
+.active{
+    left: -170px;
+}
+.nav-link{
+    text-decoration: none;
+    color: rgb(231, 227, 227);
+    font-size: 20px;
+}
+.nav-link:hover{
+    color: rgb(58, 58, 241);
+}
+
+}                          
