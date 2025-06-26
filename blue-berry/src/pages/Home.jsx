@@ -1,8 +1,13 @@
+import Explore from "../components/explore-categories/Explore"
+import Hero from "../components/hero/Hero"
 
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <Hero/>
+    <Explore/>
+    </div>
   )
 }
 
