@@ -1,0 +1,212 @@
+.deals-section {
+  width: 100%;
+  height: 100%;
+}
+.deals-header {
+  width: 85%;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-text h2 {
+  font-size: 27px;
+  text-transform: capitalize;
+}
+.header-text span {
+  color: #0984e3;
+}
+.header-text p {
+  color: #0984e3;
+}
+.countdown-time {
+  display: flex;
+  gap: 10px;
+  margin-right: 20px;
+  background-color: #f1f5f5;
+  border: 1px solid #dee0e0;
+  padding: 5px;
+  border-radius: 10px;
+}
+.countdown-time h3 {
+  font-size: 17px;
+  color: #9d9e9e;
+}
+/*SECOND METHODS OF BOX OF PRODUCT......*/
+
+.deals-carousel {
+  width: 83%;
+  height: 450px;
+  margin: auto;
+}
+.deal-card {
+  width: 240px;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #d9dadb;
+  border-radius: 20px;
+  gap: 10px;
+  margin-top: 3rem;
+  transition: transform 0.3s ease;
+}
+.deal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 5px 0 #46525c;
+}
+.deal-card img {
+  width: 80%;
+  margin-top: 10px;
+  height: 200px;
+}
+.deal-card img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.card-info {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+  padding-top: 0px;
+  border-top: 1px solid #d9e6ee;
+}
+.card-info img {
+  width: 50%;
+  height: 70px;
+  margin-top: -10px;
+}
+.category-label {
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.product-name {
+  width: 100%;
+  font-size: 17px;
+  margin-left: 20px;
+  text-transform: capitalize;
+}
+.product-name:hover {
+  color: #0984e3;
+}
+.price-info {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+.price {
+  font-size: 18px;
+  color: black;
+}
+.old-price {
+  text-decoration: line-through;
+  color: rgb(172, 168, 168);
+}
+.weight {
+  font-weight: 400;
+}
+
+@media screen and (max-width:428px) {
+
+  .deals-section {
+  width: 100%;
+  height: 100%;
+}
+.deals-header {
+  width: 95%;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+/*SECOND METHODS OF BOX OF PRODUCT......*/
+
+.deals-carousel {
+  width: 100%;
+  height: 450px;
+  margin: auto;
+}
+.deal-card {
+  width: 380px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left:1.5rem;
+  border: 1px solid #d9dadb;
+  border-radius: 20px;
+  gap: 10px;
+  margin-top: 3rem;
+  transition: transform 0.3s ease;
+}
+.deal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px 0 #46525c;
+}
+.deal-card img {
+  width: 90%;
+  margin-top: 10px;
+  height: 270px;
+  border-radius: 30px;
+  padding-top: 5px;
+}
+.deal-card img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.card-info {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+  padding-top: 0px;
+  border-top: 1px solid #d9e6ee;
+}
+.card-info img {
+  width: 50%;
+  height: 70px;
+  margin-top: -10px;
+}
+.category-label {
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.product-name {
+  width: 100%;
+  font-size: 17px;
+  margin-left: 20px;
+  text-transform: capitalize;
+}
+.product-name:hover {
+  color: #0984e3;
+}
+.price-info {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+.price {
+  font-size: 18px;
+  color: black;
+}
+.old-price {
+  text-decoration: line-through;
+  color: rgb(172, 168, 168);
+}
+.weight {
+  font-weight: 400;
+}
+}

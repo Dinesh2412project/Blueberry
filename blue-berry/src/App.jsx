@@ -6,8 +6,7 @@ import Products from './pages/Products';
 import Page from './pages/Page';
 import Blog from './pages/Blog';
 import Navbar from './components/navbar/Navbar';
-import Hero from './components/hero/Hero';
-import Explore from './components/explore-categories/Explore';
+
 
 
 function App() {
@@ -17,8 +16,6 @@ function App() {
     <>
     <BrowserRouter>
     <Navbar/>
-    <Hero/>
-    <Explore/>
     <Routes>
       <Route   exact path="/" element={<Home/>}/>
       <Route  path="/Categories" element={<Categories/>}/>

@@ -1,0 +1,85 @@
+.middle-container {
+  background-image: url("image/mid-br.jpg");
+  width: 100%;
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.middle-content {
+  width: 30%;
+  height: 240px;
+  background-color: white;
+  position: absolute;
+  bottom: 1px;
+  right: 8rem;
+  border-radius: 30px 30px 0px 0px;
+}
+.middle-content h2 {
+  margin-left: 20px;
+  margin-top: 3rem;
+  color: #6c5ce7;
+  font-size: 25px;
+}
+.middle-content h1 {
+  margin-left: 20px;
+  color: #6c5ce7;
+  font-size: 35px;
+  width: 80%;
+}
+.banner-btn {
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: 1px solid gray;
+  background: fixed;
+  border-radius: 10px;
+}
+.banner-btn:hover {
+  background-color: #6c5ce7;
+  color: white;
+} 
+@media screen and (max-width:428px) {
+    .middle-container {
+  background-image: url("image/mid-br.jpg");
+  width: 100%;
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-top: 3rem;
+}
+.middle-content {
+  width: 65%;
+  height: 220px;
+  background-color: white;
+  position: absolute;
+  bottom: 1px;
+  right: 4rem;
+  border-radius: 30px 30px 0px 0px;
+}
+.middle-content h2 {
+  margin-left: 20px;
+  margin-top: 3rem;
+  color: #6c5ce7;
+  font-size: 20px;
+}
+.middle-content h1 {
+  margin-left: 20px;
+  color:#192a56;
+  font-size: 25px;
+  width: 80%;
+}
+.banner-btn {
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: 1px solid gray;
+  background: fixed;
+  border-radius: 10px;
+}
+.banner-btn:hover {
+  background-color: #6c5ce7;
+  color: white;
+} 
+}
