@@ -87,7 +87,7 @@
   color: rgb(58, 58, 241);
 }
 
-/*MEDIA QUERY METHOD.....*/
+                                        /*MEDIA QUERY METHOD.....*/
 @media screen and (max-width: 428px) {
   .navigation-wrapper {
     width: 98%;
@@ -109,7 +109,7 @@
     margin-left: 2px;
   }
   .menu-toggle-icon {
-    margin-left: 11rem;
+    margin-left: 7rem;
     border-radius: 20px;
     display: inline-block;
     margin-top: 4px;
@@ -136,14 +136,14 @@
   }
 
   .search-input {
-    padding: 17px 200px 14px 10px;
+    padding: 17px 150px 14px 10px;
     border-radius: 10px;
     margin-left: 10px;
     margin-top: 15px;
     border: 1px solid rgb(221, 218, 218);
   }
   .user-actions {
-    margin-left: 9rem;
+    margin-left: 7rem;
     display: flex;
     gap: 40px;
     margin-top: 10px;
