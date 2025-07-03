@@ -6,6 +6,8 @@ import Categories from '../components/categories/Categories.jsx';
 import Mid_Banner from '../components/middle__banner/Mid_Banner.jsx';
 import Main__product from '../components/main__products/Main__product.jsx';
 import Orders from '../components/orders/Orders.jsx';
+import Vendor from '../components/vendors/Vendor.jsx';
+import Seller from '../components/sellers/Seller.jsx';
 
 const Home = () => {
   return (
@@ -17,6 +19,8 @@ const Home = () => {
     <Mid_Banner/>
     <Main__product/>
     <Orders/>
+    <Vendor/>
+    <Seller/>
     </div>
   )
 }
