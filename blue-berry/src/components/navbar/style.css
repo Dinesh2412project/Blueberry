@@ -93,6 +93,8 @@
     width: 98%;
     height: 200px;
     position: relative;
+    margin-left: 4rem;
+  
   }
   .navigation-header {
     width: 100%;
@@ -136,9 +138,9 @@
   }
 
   .search-input {
-    padding: 17px 150px 14px 10px;
+    padding: 17px 200px 14px 10px;
     border-radius: 10px;
-    margin-left: 10px;
+    margin-left: 2px;
     margin-top: 15px;
     border: 1px solid rgb(221, 218, 218);
   }
@@ -174,18 +176,18 @@
     position: absolute;
     top: 3.9rem;
     width: 97%;
-    height: 400px;
+    height: 460px;
     border-radius: 10px;
     background-color: #0a3d62;
     align-items: center;
     gap: 10px;
     z-index: 1;
-    left: -650px;
+    left: -770px;
     margin-left: 5px;
     list-style-type: none;
   }
   .active {
-    left: -170px;
+    left: -230px;
   }
   .nav-link {
     text-decoration: none;

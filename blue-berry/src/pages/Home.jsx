@@ -8,6 +8,8 @@ import Main__product from '../components/main__products/Main__product.jsx';
 import Orders from '../components/orders/Orders.jsx';
 import Vendor from '../components/vendors/Vendor.jsx';
 import Seller from '../components/sellers/Seller.jsx';
+import Bottom from '../components/product__bottom/Bottom.jsx';
+import Footer from '../components/footer/Footer.jsx';
 
 const Home = () => {
   return (
@@ -21,6 +23,8 @@ const Home = () => {
     <Orders/>
     <Vendor/>
     <Seller/>
+    <Bottom/>
+    <Footer/>
     </div>
   )
 }

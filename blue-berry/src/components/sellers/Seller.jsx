@@ -59,7 +59,7 @@ const Seller = () => {
     </div>
   </div>
   
-</Carousel>;
+</Carousel>
         
     </div>
   )
