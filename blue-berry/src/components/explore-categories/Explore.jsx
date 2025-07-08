@@ -25,21 +25,21 @@ const responsive = {
 
 const Explore = () => {
   return (
-    <div className="explore-section">
+    <div className="category-explorer">
       <div className="explore-header">
-        <div className="header-image">
+        <div className="explorer-image-wrapper">
           <img
             src="https://blueberry-react-next.maraviyainfotech.com/assets/img/category/category.jpg"
             alt="img"
           />
         </div>
-        <div className="header-title">
+        <div className="explorer-title">
           <h1>explore categories</h1>
         </div>
       </div>
       {/*relative product methods.......*/}
 
-      <div className="category-carousel">
+      <div className="category-slider">
         <Carousel responsive={responsive}>
           {categories.map((cat, index) => (
             <div className={`category-card ${cat.className}`} key={index}>
@@ -49,62 +49,6 @@ const Explore = () => {
             </div>
           ))}
         </Carousel>
-
-        {/* <Carousel responsive={responsive}>
-          <div className="category-card three">
-            <img
-              src="https://blueberry-react-next.maraviyainfotech.com/assets/img/category/3.svg"
-              alt="img"
-            />
-            <h4>cold drinks</h4>
-            <h6>49 items</h6>
-          </div>
-
-          <div className="category-card one">
-            <img
-              src="https://blueberry-react-next.maraviyainfotech.com/assets/img/category/5.svg"
-              alt="img"
-            />
-            <h4>fast food</h4>
-            <h6>291 items</h6>
-          </div>
-
-          <div className="category-card two">
-            <img
-              src="https://blueberry-react-next.maraviyainfotech.com/assets/img/category/2.svg"
-              alt="img"
-            />
-            <h4>fruits</h4>
-            <h6>21 items</h6>
-          </div>
-
-          <div className="category-card three">
-            <img
-              src="https://blueberry-react-next.maraviyainfotech.com/assets/img/category/6.svg"
-              alt="img"
-            />
-            <h4>snacks</h4>
-            <h6>49 items</h6>
-          </div>
-
-          <div className="category-card two">
-            <img
-              src="https://blueberry-react-next.maraviyainfotech.com/assets/img/category/4.svg"
-              alt="img"
-            />
-            <h4>bakery</h4>
-            <h6>49 items</h6>
-          </div>
-
-          <div className="category-card one">
-            <img
-              src="https://blueberry-react-next.maraviyainfotech.com/assets/img/category/1.svg"
-              alt="img"
-            />
-            <h4>vigitables</h4>
-            <h6>190 items</h6>
-          </div>
-        </Carousel>..*/}
       </div>
     </div>
   );

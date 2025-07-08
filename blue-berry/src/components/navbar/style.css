@@ -87,14 +87,13 @@
   color: rgb(58, 58, 241);
 }
 
-                                        /*MEDIA QUERY METHOD.....*/
+/*MEDIA QUERY METHOD.....*/
 @media screen and (max-width: 428px) {
   .navigation-wrapper {
     width: 98%;
     height: 200px;
     position: relative;
     margin-left: 4rem;
-  
   }
   .navigation-header {
     width: 100%;
@@ -108,10 +107,10 @@
   .logo-section {
     cursor: pointer;
     display: flex;
-    margin-left: 2px;
+    margin-left: -20px;
   }
   .menu-toggle-icon {
-    margin-left: 7rem;
+    margin-left: 5rem;
     border-radius: 20px;
     display: inline-block;
     margin-top: 4px;
@@ -138,9 +137,9 @@
   }
 
   .search-input {
-    padding: 17px 200px 14px 10px;
+    padding: 17px 170px 14px 10px;
     border-radius: 10px;
-    margin-left: 2px;
+    margin-left: -40px;
     margin-top: 15px;
     border: 1px solid rgb(221, 218, 218);
   }

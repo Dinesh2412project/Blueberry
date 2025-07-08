@@ -42,52 +42,6 @@ const Hero = () => {
       </Carousel>
     </div>
   );
-
-  {
-    /* <div className="hero-section">
-      <Carousel responsive={responsive}>
-       <div className="hero-slide">
-          <div className="slide-content">
-            <p className="offer-text">flat 30% off</p>
-            <h1 className="slide-title">explore ware fast food & snacks</h1>
-            <button className="shop-button">shop now</button>
-          </div>
-          <div className="slide-image">
-            <img
-              src="https://blueberry-react-next.maraviyainfotech.com/assets/img/hero/hero-3.png"
-              alt="img"
-            />
-          </div>
-        </div>
-
-        <div className="hero-slide">
-          <div className="slide-content">
-            <p className="offer-text">flat 30% off</p>
-            <h1 className="slide-title">explore ware fast food & snacks</h1>
-            <button className="shop-button">shop now</button>
-          </div>
-          <div className="slide-image">
-            <img
-              src="https://blueberry-react-next.maraviyainfotech.com/assets/img/hero/hero-1.png"
-              alt="img"
-            />
-          </div>
-        </div>
-
-        <div className="hero-slide">
-          <div className="slide-content">
-            <p className="offer-text">flat 30% off</p>
-            <h1 className="slide-title">explore ware fast food & snacks</h1>
-            <button className="shop-button">shop now</button>
-          </div>
-          <div className="slide-image">
-            <img
-              src="https://blueberry-react-next.maraviyainfotech.com/assets/img/hero/hero-2.png"
-              alt="img"
-            />
-          </div>
-        </div>*/
-  }
 };
 
 export default Hero;

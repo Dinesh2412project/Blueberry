@@ -22,15 +22,15 @@ const responsive = {
 
 const Main__product = () => {
   return (
-    <div className="main_container" responsive={responsive}>
-      <div className="main_headding">
-        <div className="main_top">
+    <div className="new-arrivals-section" responsive={responsive}>
+      <div className="section-header">
+        <div className="header-left">
           <h1>
             new <span>arrivals</span>
           </h1>
           <p>Shop online for new arrivals and get free shipping!</p>
         </div>
-        <ul className="main_headindRight">
+        <ul className="category-tabs">
           <li className="active">all </li>
           <li>/ snack & spices /</li>
           <li> fruits /</li>
@@ -38,22 +38,22 @@ const Main__product = () => {
         </ul>
       </div>
 
-      <div className="main_products">
+      <div className="product-grid">
         {Mainproduct.map((main, index) => (
-          <div className="product_box" key={index}>
-            <img className="product_img" src={main.img} alt="product" />
-            <div className="main_content">
-              <div className="fruite_name">
-                <p>{main.category}</p>
-                <img src={main.rating} alt="image" />
+          <div className="product-card" key={index}>
+            <img className="product-image" src={main.img} alt="product" />
+            <div className="product-info">
+              <div className="product-meta">
+                <p className="product-category">{main.category}</p>
+                <img className="product-rating" src={main.rating} alt="image" />
               </div>
-              <h1>{main.name}</h1>
-              <div className="product_price">
-                <div className="amount">
+              <h1 className="product-name">{main.name}</h1>
+              <div className="product-pricing">
+                <div className="price-details">
                   <h5 className="productnew_price">${main.price}</h5>
                   <h4 className="productold-price">${main.oldPrice}</h4>
                 </div>
-                <h3 className="persentage">{main.weight}</h3>
+                <h3 className="product-weight">{main.weight}</h3>
               </div>
             </div>
           </div>
