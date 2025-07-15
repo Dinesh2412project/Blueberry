@@ -14,11 +14,11 @@ const Footer = () => {
     <div className="footer-wrapper">
       <h2 className="footer-title">Brands Directory</h2>
       <div className="brand-directory">
-        {footerData.map((footers, index) => (
+        {footerData?.map((footers, index) => (
           <div className="brand-category" key={index}>
-            <h3 className="category-title">{footers.title}</h3>
+            <h3 className="category-title">{footers?.title}</h3>
             <ul className="category-list">
-              {footers.items.map((item, i) => (
+              {footers?.items.map((item, i) => (
                 <li key={i} className="list-item">
                   {item}
                 </li>
@@ -53,11 +53,11 @@ const Footer = () => {
             </div>
           </div>
 
-          {Footerend.map((end, index) => (
+          {Footerend?.map((end, index) => (
             <div className="footer-links" key={index}>
-              <h3 className="link-title">{end.title}</h3>
+              <h3 className="link-title">{end?.title}</h3>
               <ul className="link-list">
-                {end.items.map((item, i) => (
+                {end?.items.map((item, i) => (
                   <li className="link-item" key={i}>
                     {item}
                   </li>

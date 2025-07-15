@@ -39,21 +39,21 @@ const Main__product = () => {
       </div>
 
       <div className="product-grid">
-        {Mainproduct.map((main, index) => (
+        {Mainproduct?.map((main, index) => (
           <div className="product-card" key={index}>
-            <img className="product-image" src={main.img} alt="product" />
+            <img className="product-image" src={main?.img} alt="product" />
             <div className="product-info">
               <div className="product-meta">
-                <p className="product-category">{main.category}</p>
-                <img className="product-rating" src={main.rating} alt="image" />
+                <p className="product-category">{main?.category}</p>
+                <img className="product-rating" src={main?.rating} alt="image" />
               </div>
-              <h1 className="product-name">{main.name}</h1>
+              <h1 className="product-name">{main?.name}</h1>
               <div className="product-pricing">
                 <div className="price-details">
-                  <h5 className="productnew_price">${main.price}</h5>
-                  <h4 className="productold-price">${main.oldPrice}</h4>
+                  <h5 className="productnew_price">${main?.price}</h5>
+                  <h4 className="productold-price">${main?.oldPrice}</h4>
                 </div>
-                <h3 className="product-weight">{main.weight}</h3>
+                <h3 className="product-weight">{main?.weight}</h3>
               </div>
             </div>
           </div>

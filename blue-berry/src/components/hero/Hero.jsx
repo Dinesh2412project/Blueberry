@@ -27,15 +27,15 @@ const Hero = () => {
   return (
     <div className="hero-section">
       <Carousel responsive={responsive}>
-        {slidesData.map((slide, index) => (
+        {slidesData?.map((slide, index) => (
           <div className="hero-slide" key={index}>
             <div className="slide-content">
-              <p className="offer-text">{slide.offer}</p>
-              <h1 className="slide-title">{slide.title}</h1>
+              <p className="offer-text">{slide?.offer}</p>
+              <h1 className="slide-title">{slide?.title}</h1>
               <button className="shop-button">shop now</button>
             </div>
             <div className="slide-image">
-              <img src={slide.img} loading="lazy" alt={`slide-${index}`} />
+              <img src={slide?.img} loading="lazy" alt={`slide-${index}`} />
             </div>
           </div>
         ))}

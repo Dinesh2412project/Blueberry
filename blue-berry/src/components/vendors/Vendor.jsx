@@ -21,13 +21,13 @@ const Vendor = () => {
           />
         </div>
         <div className="content_section">
-          {Topics.map((topic, index) => (
+          {Topics?.map((topic, index) => (
             <div className="content_box" key={index}>
               <div className="vendor_topic">
-                <h4>{topic.name}</h4>
-                <h6>{topic.categories}</h6>
+                <h4>{topic?.name}</h4>
+                <h6>{topic?.categories}</h6>
               </div>
-              <p>{topic.product}</p>
+              <p>{topic?.product}</p>
             </div>
           ))}
         </div>

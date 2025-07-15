@@ -5,12 +5,12 @@ const Bottom = () => {
   return (
     <div className="fruit-section">
       <div className="fruit-grid">
-        {Fruits.map((fruit, index) => (
+        {Fruits?.map((fruit, index) => (
           <div className="fruit-card" key={index}>
-            <img src={fruit.img} alt="img" />
+            <img src={fruit?.img} alt="img" />
             <div className="fruit-info active">
-              <p>{fruit.date}</p>
-              <h2>{fruit.name}</h2>
+              <p>{fruit?.date}</p>
+              <h2>{fruit?.name}</h2>
             </div>
           </div>
         ))}

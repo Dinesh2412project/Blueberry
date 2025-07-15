@@ -41,11 +41,11 @@ const Explore = () => {
 
       <div className="category-slider">
         <Carousel responsive={responsive}>
-          {categories.map((cat, index) => (
+          {categories?.map((cat, index) => (
             <div className={`category-card ${cat.className}`} key={index}>
-              <img src={cat.img} alt={cat.title} />
-              <h4>{cat.title}</h4>
-              <h6>{cat.items} items</h6>
+              <img src={cat?.img} alt={cat.title} />
+              <h4>{cat?.title}</h4>
+              <h6>{cat?.items} items</h6>
             </div>
           ))}
         </Carousel>

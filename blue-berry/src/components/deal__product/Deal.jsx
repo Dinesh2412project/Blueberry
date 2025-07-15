@@ -41,26 +41,26 @@ const Deal = () => {
 
       <div className="deals-carousel">
         <Carousel responsive={responsive}>
-          {dealProducts.map((product, index) => (
+          {dealProducts?.map((product, index) => (
             <div className="deal-card" key={index}>
-              <img src={product.img} alt={product.name} loading="lazy" />
+              <img src={product?.img} alt={product.name} loading="lazy" />
               <div className="card-info">
-                <h5 className="category-label">{product.category}</h5>
+                <h5 className="category-label">{product?.category}</h5>
                 <img
                   className="rating-icon"
-                  src={product.rating}
+                  src={product?.rating}
                   alt="rating"
                 />
               </div>
-              <h4 className="product-name">{product.name}</h4>
+              <h4 className="product-name">{product?.name}</h4>
               <div className="price-info">
                 <h3 className="price">
-                  ${product.price}{" "}
+                  ${product?.price}{" "}
                   <span className="old-price">
-                    ${product.oldPrice.toFixed(2)}
+                    ${product?.oldPrice.toFixed(2)}
                   </span>
                 </h3>
-                <h6 className="weight">{product.weight}</h6>
+                <h6 className="weight">{product?.weight}</h6>
               </div>
             </div>
           ))}
