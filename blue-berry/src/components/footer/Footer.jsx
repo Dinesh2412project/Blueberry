@@ -8,11 +8,12 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
+import String_En from "../../assets/Datas.js";
 
 const Footer = () => {
   return (
     <div className="footer-wrapper">
-      <h2 className="footer-title">Brands Directory</h2>
+      <h2 className="footer-title">{String_En.footer.title}</h2>
       <div className="brand-directory">
         {footerData?.map((footers, index) => (
           <div className="brand-category" key={index}>
@@ -32,24 +33,11 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="footer-main">
           <div className="footer-info">
-            <img
-              className="logo-img"
-              src="https://blueberry-react-next.maraviyainfotech.com/assets/img/logo/logo.png"
-              alt="img"
-            />
-            <p className="footer-description">
-              BlueBerry is the biggest market of grocery products. Get your
-              daily needs from our store.
-            </p>
+            <img className="logo-img" src={String_En.footer.img_1} alt="img" />
+            <p className="footer-description">{String_En.footer.para}</p>
             <div className="app-icons">
-              <img
-                src="https://blueberry-react-next.maraviyainfotech.com/assets/img/app/android.png"
-                alt="img"
-              />
-              <img
-                src="https://blueberry-react-next.maraviyainfotech.com/assets/img/app/apple.png"
-                alt="img"
-              />
+              <img src={String_En.footer.img_2} alt="img" />
+              <img src={String_En.footer.img_3} alt="img" />
             </div>
           </div>
 
@@ -67,24 +55,24 @@ const Footer = () => {
           ))}
 
           <div className="footer-contact">
-            <h4 className="contact-title">contact</h4>
+            <h4 className="contact-title">{String_En.footer.name}</h4>
             <p className="contact-address">
               <span>
                 <SlLocationPin />
               </span>
-              971 Lajamni, Motavarachha, Surat, Gujarat, Bharat 394101.
+              {String_En.footer.address}
             </p>
             <h6>
               <span>
                 <FaWhatsapp />
               </span>
-              +00 9876543210
+              {String_En.footer.phone}
             </h6>
             <h6>
               <span>
                 <MdOutlineMailOutline />
               </span>
-              example@email.com
+              {String_En.footer.email}
             </h6>
             <div className="social-icons">
               <a href="#">

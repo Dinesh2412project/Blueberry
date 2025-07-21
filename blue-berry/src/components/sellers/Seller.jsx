@@ -1,6 +1,7 @@
 import "./style.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import String_En from "../../assets/Datas.js";
 
 const responsive = {
   superLargeDesktop: {
@@ -28,58 +29,34 @@ const Seller = () => {
       <Carousel responsive={responsive}>
         <div className="seller_box">
           <div className="seller_img">
-            <img
-              src="https://blueberry-react-next.maraviyainfotech.com/assets/img/testimonials/1.jpg"
-              alt="img"
-            />
+            <img src={String_En.seller.img} alt="img" />
           </div>
           <div className="seller_content">
-            <h2>isabella oliver</h2>
-            <h6>(manager)</h6>
-            <p>
-              {" "}
-              dignissimos ab inventore itaque minima corrupti provident, omnis,
-              sunt quos recusandae debitis fuga esse incidunt necessitatibus.
-              Quos suscipit commodi natus quam odio ratione veritatis.
-            </p>
+            <h2>{String_En.seller.name}</h2>
+            <h6>{String_En.seller.title}</h6>
+            <p> {String_En.seller.para}</p>
           </div>
         </div>
 
         <div className="seller_box">
           <div className="seller_img">
-            <img
-              src="https://blueberry-react-next.maraviyainfotech.com/assets/img/testimonials/2.jpg"
-              alt="img"
-            />
+            <img src={String_En.seller.img_1} alt="img" />
           </div>
           <div className="seller_content">
-            <h2>nikki albart</h2>
-            <h6>(team leader)</h6>
-            <p>
-              {" "}
-              dignissimos ab inventore itaque minima corrupti provident, omnis,
-              sunt quos recusandae debitis fuga esse incidunt necessitatibus.
-              Quos suscipit commodi natus quam odio ratione veritatis.
-            </p>
+            <h2>{String_En.seller.name_1}</h2>
+            <h6>{String_En.seller.title_1}</h6>
+            <p> {String_En.seller.para}</p>
           </div>
         </div>
 
         <div className="seller_box">
           <div className="seller_img">
-            <img
-              src="https://blueberry-react-next.maraviyainfotech.com/assets/img/testimonials/3.jpg"
-              alt="img"
-            />
+            <img src={String_En.seller.img_2} alt="img" />
           </div>
           <div className="seller_content">
-            <h2>stephen smith</h2>
-            <h6>(co founder)</h6>
-            <p>
-              {" "}
-              dignissimos ab inventore itaque minima corrupti provident, omnis,
-              sunt quos recusandae debitis fuga esse incidunt necessitatibus.
-              Quos suscipit commodi natus quam odio ratione veritatis.
-            </p>
+            <h2>{String_En.seller.name_2}</h2>
+            <h6>{String_En.seller.title_2}</h6>
+            <p> {String_En.seller.para}</p>
           </div>
         </div>
       </Carousel>

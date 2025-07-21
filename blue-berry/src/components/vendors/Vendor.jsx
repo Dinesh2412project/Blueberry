@@ -1,24 +1,20 @@
 import "./style.css";
 import Topics from "../../assets/DataStorage/VendorData";
+import String_En from "../../assets/Datas.js";
 
 const Vendor = () => {
   return (
     <div className="vendor_container">
       <div className="vendor_headings">
         <h1>
-          top<span>vendors</span>
+          {String_En.vendor.title}
+          <span>{String_En.vendor.name}</span>
         </h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
-          voluptate vero natus ex.
-        </p>
+        <p>{String_En.vendor.para}</p>
       </div>
       <div className="vendor_section">
         <div className="img_section">
-          <img
-            src="https://blueberry-react-next.maraviyainfotech.com/assets/img/vendors/img-1.jpg"
-            alt="img"
-          />
+          <img src={String_En.vendor.img} alt="img" />
         </div>
         <div className="content_section">
           {Topics?.map((topic, index) => (
@@ -32,11 +28,7 @@ const Vendor = () => {
           ))}
         </div>
       </div>
-      <img
-        className="vendor_logo"
-        src="https://blueberry-react-next.maraviyainfotech.com/assets/img/vendors/vendor-1.jpg"
-        alt="img"
-      />
+      <img className="vendor_logo" src={String_En.vendor.img_1} alt="img" />
     </div>
   );
 };

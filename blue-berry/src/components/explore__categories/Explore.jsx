@@ -2,6 +2,7 @@ import "./style.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import categories from "../../assets/DataStorage/ExploreData";
+import String_En from "../../assets/Datas";
 
 const responsive = {
   superLargeDesktop: {
@@ -28,13 +29,10 @@ const Explore = () => {
     <div className="category-explorer">
       <div className="explore-header">
         <div className="explorer-image-wrapper">
-          <img
-            src="https://blueberry-react-next.maraviyainfotech.com/assets/img/category/category.jpg"
-            alt="img"
-          />
+          <img src={String_En.category.img} alt="img" />
         </div>
         <div className="explorer-title">
-          <h1>explore categories</h1>
+          <h1>{String_En.category.title}</h1>
         </div>
       </div>
       {/*relative product methods.......*/}

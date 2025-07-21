@@ -1,5 +1,6 @@
 import "./style.css";
 import Mainproduct from "../../assets/DataStorage/Main__productData";
+import String_En from "../../assets/Datas.js";
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -26,15 +27,16 @@ const Main__product = () => {
       <div className="section-header">
         <div className="header-left">
           <h1>
-            new <span>arrivals</span>
+            {String_En.main_product.heading}
+            <span>{String_En.main_product.name}</span>
           </h1>
-          <p>Shop online for new arrivals and get free shipping!</p>
+          <p>{String_En.main_product.para}</p>
         </div>
         <ul className="category-tabs">
-          <li className="active">all </li>
-          <li>/ snack & spices /</li>
-          <li> fruits /</li>
-          <li> vegetables /</li>
+          <li className="active">{String_En.main_product.title}</li>
+          <li>{String_En.main_product.title_1}</li>
+          <li>{String_En.main_product.title_2}</li>
+          <li> {String_En.main_product.title_3}</li>
         </ul>
       </div>
 
@@ -45,7 +47,11 @@ const Main__product = () => {
             <div className="product-info">
               <div className="product-meta">
                 <p className="product-category">{main?.category}</p>
-                <img className="product-rating" src={main?.rating} alt="image" />
+                <img
+                  className="product-rating"
+                  src={main?.rating}
+                  alt="image"
+                />
               </div>
               <h1 className="product-name">{main?.name}</h1>
               <div className="product-pricing">

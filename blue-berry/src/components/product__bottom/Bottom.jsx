@@ -1,5 +1,6 @@
 import "./style.css";
 import Fruits from "../../assets/DataStorage/BottomData";
+import String_En from "../../assets/Datas.js";
 
 const Bottom = () => {
   return (
@@ -17,37 +18,22 @@ const Bottom = () => {
       </div>
       <div className="instagram-gallery">
         <div className="gallery-image">
-          <img
-            src="https://blueberry-react-next.maraviyainfotech.com/assets/img/instagram/1.jpg"
-            alt=""
-          />
+          <img src={String_En.bottom.img} alt="img" />
         </div>
 
         <div className="gallery-image">
-          <img
-            src="https://blueberry-react-next.maraviyainfotech.com/assets/img/instagram/2.jpg"
-            alt=""
-          />
+          <img src={String_En.bottom.img_1} alt="img" />
         </div>
 
         <div className="gallery-image active">
-          <img
-            src="https://blueberry-react-next.maraviyainfotech.com/assets/img/instagram/3.jpg"
-            alt=""
-          />
+          <img src={String_En.bottom.img_2} alt="img" />
         </div>
 
         <div className="gallery-image active">
-          <img
-            src="https://blueberry-react-next.maraviyainfotech.com/assets/img/instagram/4.jpg"
-            alt=""
-          />
+          <img src={String_En.bottom.img_3} alt="img" />
         </div>
         <div className="gallery-image active">
-          <img
-            src="https://blueberry-react-next.maraviyainfotech.com/assets/img/instagram/5.jpg"
-            alt=""
-          />
+          <img src={String_En.bottom.img_4} alt="img" />
         </div>
       </div>
     </div>

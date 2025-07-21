@@ -2,6 +2,7 @@ import "./style.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import dealProducts from "../../assets/DataStorage/ProductData";
+import String_En from "../../assets/Datas";
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -28,13 +29,14 @@ const Deal = () => {
       <div className="deals-header">
         <div className="header-text">
           <h2>
-            Day of the <span>deal</span>
+            {String_En.deal.heading}
+            <span>{String_En.deal.name}</span>
           </h2>
-          <p>Don't wait. The time will never be just right.</p>
+          <p>{String_En.deal.para}</p>
         </div>
         <div className="countdown-time">
-          <h3>23 days</h3>
-          <h3>23 : 43 :51</h3>
+          <h3>{String_En.deal.date}</h3>
+          <h3>{String_En.deal.time}</h3>
         </div>
       </div>
       {/*SECOND METHODS OF BOX OF PRODUCT......*/}
