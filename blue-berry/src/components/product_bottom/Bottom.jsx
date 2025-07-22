@@ -1,6 +1,6 @@
 import "./style.css";
-import Fruits from "../../assets/DataStorage/BottomData";
-import String_En from "../../assets/Datas.js";
+import {Fruits} from "../../utils/constants/constant.js";
+import String_En from "../../utils/en_datas/En.js";
 
 const Bottom = () => {
   return (
@@ -18,22 +18,22 @@ const Bottom = () => {
       </div>
       <div className="instagram-gallery">
         <div className="gallery-image">
-          <img src={String_En.bottom.img} alt="img" />
+          <img src={String_En.bottom_img} alt="img" />
         </div>
 
         <div className="gallery-image">
-          <img src={String_En.bottom.img_1} alt="img" />
+          <img src={String_En.bottom_img_1} alt="img" />
         </div>
 
         <div className="gallery-image active">
-          <img src={String_En.bottom.img_2} alt="img" />
+          <img src={String_En.bottom_img_2} alt="img" />
         </div>
 
         <div className="gallery-image active">
-          <img src={String_En.bottom.img_3} alt="img" />
+          <img src={String_En.bottom_img_3} alt="img" />
         </div>
         <div className="gallery-image active">
-          <img src={String_En.bottom.img_4} alt="img" />
+          <img src={String_En.bottom_img_4} alt="img" />
         </div>
       </div>
     </div>

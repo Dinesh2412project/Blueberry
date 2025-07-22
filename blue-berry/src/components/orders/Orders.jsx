@@ -1,5 +1,5 @@
 import "./style.css";
-import Shipping from "../../assets/DataStorage/OrderData";
+import {Shipping} from "../../utils/constants/constant.js";
 
 const Orders = () => {
   return (

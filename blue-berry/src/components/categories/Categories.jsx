@@ -1,5 +1,5 @@
 import "./style.css";
-import bannerData from "../../assets/DataStorage/CategoriesData";
+import {bannerData} from '../../utils/constants/constant.js'; 
 import BannerCard from '../../components/card__method/BannerCard.jsx';
 
 const Categories = () => {

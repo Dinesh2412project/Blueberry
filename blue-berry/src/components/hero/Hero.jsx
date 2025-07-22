@@ -1,7 +1,7 @@
 import "./style.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import slidesData from "../../../src/assets/DataStorage/HeroData";
+import {slidesData} from "../../utils/constants/constant.js";
 
 const responsive = {
   superLargeDesktop: {

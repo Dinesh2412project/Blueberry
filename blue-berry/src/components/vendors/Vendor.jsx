@@ -1,20 +1,20 @@
 import "./style.css";
-import Topics from "../../assets/DataStorage/VendorData";
-import String_En from "../../assets/Datas.js";
+import {Topics} from "../../utils/constants/constant.js";
+import String_En from "../../utils/en_datas/En.js";
 
 const Vendor = () => {
   return (
     <div className="vendor_container">
       <div className="vendor_headings">
         <h1>
-          {String_En.vendor.title}
-          <span>{String_En.vendor.name}</span>
+          {String_En.top}
+          <span>{String_En.vendors}</span>
         </h1>
-        <p>{String_En.vendor.para}</p>
+        <p>{String_En.dolor}</p>
       </div>
       <div className="vendor_section">
         <div className="img_section">
-          <img src={String_En.vendor.img} alt="img" />
+          <img src={String_En.vendor_img} alt="img" />
         </div>
         <div className="content_section">
           {Topics?.map((topic, index) => (
@@ -28,7 +28,7 @@ const Vendor = () => {
           ))}
         </div>
       </div>
-      <img className="vendor_logo" src={String_En.vendor.img_1} alt="img" />
+      <img className="vendor_logo" src={String_En.vendor_img_1} alt="img" />
     </div>
   );
 };
