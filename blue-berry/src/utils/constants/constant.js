@@ -1,28 +1,30 @@
 // src/utils/constants.js
+import String_En from '../../utils/en_datas/En.js';
+
 export const Fruits = [
   {
     img: "https://blueberry-react-next.maraviyainfotech.com/assets/img/blog/7.jpg",
-    date: "June 30, 2024 - organic",
-    name: "Marketing guide: 5 steps to success.",
+    date: String_En.bottom_date,
+    name: String_En.Marketing_guide,
   },
   {
     img: "https://blueberry-react-next.maraviyainfotech.com/assets/img/blog/8.jpg",
-    date: "May 10, 2023 - organic",
-    name: "Best way to solve business deal issue.",
+    date: String_En.bottom_date1,
+    name: String_En.Best_way,
   },
   {
     img: "https://blueberry-react-next.maraviyainfotech.com/assets/img/blog/9.jpg",
-    date: "June 10, 2022 - organic",
-    name: "Business ideas to grow your business.",
+    date: String_En.bottom_date2,
+    name: String_En.Business_ideas,
   },
   {
     img: "https://blueberry-react-next.maraviyainfotech.com/assets/img/blog/10.jpg",
-    date: "Feb 12, 2022 - organic",
-    name: "31 customer stats to know in 2020.",
+    date: String_En.bottom_date3,
+    name: String_En.customer_stats,
   },
 ];
 
-export const bannerData = [
+export const Categories_offer = [
   {
     image: "https://blueberry-react-next.maraviyainfotech.com/assets/img/banner-one/one.png",
     title: "Tasty Snack & Fast food",
@@ -35,116 +37,95 @@ export const bannerData = [
   },
 ];
 
-export const categories = [
+export const Explore_categories = [
   {
     className: "three",
     img: "https://blueberry-react-next.maraviyainfotech.com/assets/img/category/3.svg",
-    title: "cold drinks",
+    title: String_En.cold_drinks,
     items: 49,
   },
   {
     className: "one",
     img: "https://blueberry-react-next.maraviyainfotech.com/assets/img/category/5.svg",
-    title: "fast food",
+    title: String_En.fast_food,
     items: 291,
   },
   {
     className: "two",
     img: "https://blueberry-react-next.maraviyainfotech.com/assets/img/category/2.svg",
-    title: "fruits",
+    title: String_En.fruits,
     items: 21,
   },
   {
     className: "three",
     img: "https://blueberry-react-next.maraviyainfotech.com/assets/img/category/6.svg",
-    title: "snacks",
+    title: String_En.snacks,
     items: 49,
   },
   {
     className: "two",
     img: "https://blueberry-react-next.maraviyainfotech.com/assets/img/category/4.svg",
-    title: "bakery",
+    title: String_En.bakery,
     items: 49,
   },
   {
     className: "one",
     img: "https://blueberry-react-next.maraviyainfotech.com/assets/img/category/1.svg",
-    title: "vigitables",
+    title: String_En.vegetables,
     items: 190,
   },
 ];
 
 export const Footerend =[
       {
-    title: "Category",
-    items: [
-      "snacks", "juice", "chips", "spices", "Sauces",
-      "Fruit",
-    ]
+    title: String_En.Category,
+    items: String_En.items
   },
    {
-    title: "Company",
-    items: [
-      "about us", "delivery", "legal notice", "team & conditions", "Secure payment",
-      "contact us",
-    ]
+    title: String_En.Company,
+    items: String_En.items1,
   },
    {
-    title: "Category",
-    items: [
-      "sign in", "view cart", "return policy", "become a vendor", "Affiliate Program",
-      "Payments",
-    ]
+    title: String_En.Account,
+    items:String_En.items2,
   },
 ];
 
 export const footerData = [
   {
-    title: "Jewellery",
-    items: [
-      "Necklace |", "Earrings |", "Couple Rings |", "Pendants |", "Crystal |",
-      "Bangles |", "Bracelets |", "Nose Pin |", "Chain"
-    ]
+    title: String_En.Jewellery,
+    items:String_En.Jewellery_items
   },
   
   {
-    title: "fashion",
-    items: [
-      "t-sshirt |", "shorts&jeans |", "jacket |", "dress & frock |", "inner wear |","hosiery"
-    ]
+    title: String_En.fashion,
+    items: String_En.fashion_items
   },
   {
-    title: "footwear",
-    items: [
-      "sport |", "formal |", "boots |", "casual |", "Crystal |",
-      "Bangles |", "Bracelets |", "Nose Pin |", "Chain"
-    ]
+    title: String_En.footwear,
+    items: String_En.footwear_items
   },
   {
-    title: "cosmetics",
-    items: [
-      "shampoo |", "baby wash |", "fash wash |", "makeup kit |", "liner |",
-      "lipstick |", "perfume |", "body shop |", "scrub |","hair gel |","hair color |","hair dey |",
-      "sun screen |","skin lotion |","liner |","lipstick",
-    ]
+    title: String_En.cosmetics,
+    items: String_En.cosmetics_items
   },
 ];
 
-export const slidesData = [
+export const HeroData = [
   {
     img: "https://blueberry-react-next.maraviyainfotech.com/assets/img/hero/hero-3.png",
-    title: "explore ware fast food & snacks",
-    offer: "flat 30% off",
+    title: String_En.hero_heading,
+    offer: String_En.hero_offers,
   },
   {
     img: "https://blueberry-react-next.maraviyainfotech.com/assets/img/hero/hero-2.png",
-    title: "explore ware fast food & snacks",
-    offer: "flat 30% off",
+    title: String_En.hero_heading,
+    offer: String_En.hero_offers,
   },
   {
     img: "https://blueberry-react-next.maraviyainfotech.com/assets/img/hero/hero-1.png",
-    title: "explore ware fast food & snacks",
-    offer: "flat 30% off",
+    title: String_En.hero_heading,
+    offer: String_En.hero_offers,
   },
 ];
 export const Mainproduct =[
@@ -261,23 +242,23 @@ export const Mainproduct =[
 export const Shipping = [
     {
         img: "image/orders/order1.png",
-        name: "free shiping",
-        pera: "molestiae ducimus tempora quibusdam nulla, sit enim.",
+        name: String_En.free_shiping,
+        pera: String_En.offer_para,
     },
     {
         img: "image/orders/order2.png",
-        name: "24x7 Support",
-        pera: "Contact us 24 hours a day, 7 days a week.",
+        name: String_En.Support,
+        pera: String_En.offer_para1,
     },
     {
         img: "image/orders/order3.png",
-        name: "30 Days Return",
-        pera: "Simply return it within 30 days for an exchange",
+        name:String_En.Days_Return,
+        pera: String_En.simply_return,
     },
     {
         img: "image/orders/order4.png",
-        name: "Payment Secure",
-        pera: "Contact us 24 hours a day, 7 days a week",
+        name: String_En.Payment_Secure,
+        pera: String_En.offer_para1,
     },
 
 ];
@@ -287,7 +268,7 @@ export const dealProducts = [
     img: "image/deal-1.jpg",
     category: "juice",
     rating: "image/11.png",
-    name: "mixed almond nuts juice pa",
+    name: String_En.mixed_almond,
     price: 22,
     oldPrice: 32,
     weight: "250 g",
@@ -296,7 +277,7 @@ export const dealProducts = [
     img: "image/deal-2.jpg",
     category: "fruits",
     rating: "image/11.png",
-    name: "fresh mango slice juice",
+    name:String_En.fresh_mango,
     price: 22,
     oldPrice: 32,
     weight: "100 ml",
@@ -305,7 +286,7 @@ export const dealProducts = [
     img: "image/deal-3.jpg",
     category: "spices",
     rating: "image/11.png",
-    name: "black papper spice pack",
+    name: String_En.black_papper,
     price: 22,
     oldPrice: 32,
     weight: "1 pack",
@@ -314,7 +295,7 @@ export const dealProducts = [
     img: "image/deal-4.jpg",
     category: "chocos",
     rating: "image/11.png",
-    name: "mixed fruits chocolates",
+    name: String_En.mixed_fruits,
     price: 15,
     oldPrice: 32,
     weight: "1 pack",
@@ -323,7 +304,7 @@ export const dealProducts = [
     img: "image/deal-5.jpg",
     category: "juice",
     rating: "image/11.png",
-    name: "organic apple juice pack",
+    name: String_En.apple_juice,
     price: 22,
     oldPrice: 32,
     weight: "100 ml",

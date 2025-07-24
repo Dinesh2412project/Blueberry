@@ -1,7 +1,7 @@
 import "./style.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import {slidesData} from "../../utils/constants/constant.js";
+import {HeroData} from "../../utils/constants/constant.js";
 
 const responsive = {
   superLargeDesktop: {
@@ -27,7 +27,7 @@ const Hero = () => {
   return (
     <div className="hero-section">
       <Carousel responsive={responsive}>
-        {slidesData?.map((slide, index) => (
+        {HeroData?.map((slide, index) => (
           <div className="hero-slide" key={index}>
             <div className="slide-content">
               <p className="offer-text">{slide?.offer}</p>

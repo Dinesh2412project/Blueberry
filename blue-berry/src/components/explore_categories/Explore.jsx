@@ -1,7 +1,7 @@
 import "./style.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import {categories} from "../../utils/constants/constant.js";
+import {Explore_categories} from "../../utils/constants/constant.js";
 import String_En from "../../utils/en_datas/En.js";
 
 const responsive = {
@@ -29,7 +29,7 @@ const Explore = () => {
     <div className="category-explorer">
       <div className="explore-header">
         <div className="explorer-image-wrapper">
-          <img src={String_En.categories_img} alt="img" />
+          <img src={String_En.category_img} alt="img" />
         </div>
         <div className="explorer-title">
           <h1>{String_En.explore_categories}</h1>
@@ -39,7 +39,7 @@ const Explore = () => {
 
       <div className="category-slider">
         <Carousel responsive={responsive}>
-          {categories?.map((cat, index) => (
+          {Explore_categories?.map((cat, index) => (
             <div className={`category-card ${cat.className}`} key={index}>
               <img src={cat?.img} alt={cat.title} />
               <h4>{cat?.title}</h4>
